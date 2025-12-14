@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Link,useNavigate } from "react-router";
 import { useParams } from "react-router";
+import Footer from "../components/Footer";
 
 
 const AdminUpdatePage = () => {
@@ -131,6 +132,7 @@ if(loading)
 
         <button onClick={handlesubmit} className="btn bg-green-700 m-5">update</button>
       </div>
+      <Footer/>
     </div>
   )
 }

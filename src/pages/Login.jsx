@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Link } from "react-router";
 import { useNavigate } from "react-router";
+import Footer from "../components/Footer";
 
 const Login = () => {
     const navigate=useNavigate();
@@ -62,6 +63,7 @@ const Login = () => {
         Submit
       </button>
     </form>
+    <Footer/>
   </div>
 );
 

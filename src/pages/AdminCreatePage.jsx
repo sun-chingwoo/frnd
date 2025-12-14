@@ -2,6 +2,7 @@ import { useState } from "react"
 import toast from "react-hot-toast";
 import { Link,useNavigate } from "react-router";
 import axios from "axios";
+import Footer from "../components/Footer";
 
 const AdminCreatePage = () => {
     const navigate=useNavigate();
@@ -91,6 +92,7 @@ const AdminCreatePage = () => {
           </button>
         </form>
       </div>
+      <Footer/>
     </div>
   );
 };

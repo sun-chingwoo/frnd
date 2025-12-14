@@ -5,6 +5,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import Createcard from "../components/Createcard";
 import { Link, useLocation } from "react-router";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   const [cards,setCards] = useState([]);
@@ -44,6 +45,7 @@ const HomePage = () => {
           return <Link to={`/${card._id}`} key={card._id}><Createcard card={card}/></Link>
         })}
       </div>
+      <Footer/>
     </div>
   )
 }

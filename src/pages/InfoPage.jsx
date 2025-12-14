@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useParams } from "react-router";
 import toast from "react-hot-toast";
 import { Link } from "react-router";
+import Footer from "../components/Footer";
 
 
 const InfoPage = () => {
@@ -57,7 +58,6 @@ const InfoPage = () => {
 
       <div className="bg-gray-800 text-white grid grid-cols-1 md:grid-cols-2 bg-base-300 p-6 rounded-lg max-w-4xl mx-auto">
 
-        {/* LEFT-IMAGE */}
         <div>
           <img
             src={card.image}
@@ -66,7 +66,6 @@ const InfoPage = () => {
           />
         </div>
 
-        {/* RIGHT SECTION — DETAILS */}
         <div className="flex flex-col space-y-4 p-2">
           <h1 className="text-3xl font-bold">{card.name}</h1>
 
@@ -94,8 +93,10 @@ const InfoPage = () => {
             Finalize
           </button>
         </div>
-
       </div>
+        <div className="fixed bottom-0 left-0 w-full bg-black py-6">
+          <Footer/>
+        </div>
     </div>
   );
 };

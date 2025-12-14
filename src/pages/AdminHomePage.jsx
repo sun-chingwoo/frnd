@@ -5,6 +5,7 @@ import toast from "react-hot-toast"
 import Createcard from "../components/Createcard"
 import Navbar from "../components/Navbar"
 import { Link } from "react-router"
+import Footer from "../components/Footer"
 
 const AdminHomePage = () => {
   const [cards,setCards] = useState([])
@@ -40,6 +41,7 @@ const AdminHomePage = () => {
       <div className="text-center">
       <Link to="/admin/create" className="btn bg-green-800 mx-auto">Create New</Link>
       </div>
+      <Footer/>
     </div>
   )
 }
