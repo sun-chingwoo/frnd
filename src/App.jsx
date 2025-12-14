@@ -5,7 +5,7 @@ import AdminUpdatePage from './pages/AdminUpdatePage'
 import HomePage from './pages/HomePage.jsx'
 import InfoPage from './pages/InfoPage'
 import AdminCreatePage from './pages/AdminCreatePage.jsx'
-import SignUp from './pages/signup.jsx'
+import SignUp from './pages/SignUp.jsx'
 import Login from './pages/Login.jsx'
 import Search from './pages/Search.jsx'
 

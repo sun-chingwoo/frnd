@@ -34,7 +34,7 @@ const SignUp = () => {
         <Link to="/filter" className="btn btn-sm bg-gray-600">
           ← Home
         </Link>
-        <h1 className="text-2xl font-bold">Log-in</h1>
+        <h1 className="text-2xl font-bold">Sign-up</h1>
       </div>
 
       <label className="label">
