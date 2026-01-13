@@ -92,7 +92,7 @@ const AdminCreatePage = () => {
           </button>
         </form>
       </div>
-      <Footer/>
+      <Footer/>   
     </div>
   );
 };
