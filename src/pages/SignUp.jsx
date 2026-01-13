@@ -25,44 +25,60 @@ const SignUp = () => {
     }
   
   return (
-  <div className="min-h-screen flex justify-center items-center bg-gray-500">
-    <form
+  <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+    
+   <form
       onSubmit={handleSubmit}
-      className="flex flex-col bg-gray-800 text-white p-8 m-7 rounded-2xl shadow-lg w-96 gap-6"
+      className="w-full max-w-md bg-black/80 backdrop-blur-md p-8 rounded-2xl shadow-2xl text-white"
     >
-      <div className="flex justify-between items-center mb-4">
-        <Link to="/filter" className="btn btn-sm bg-gray-600">
+      
+      {/* Header */}
+      <div className="flex justify-between items-center mb-6">
+        <Link
+          to="/filter"
+          className="text-sm text-gray-300 hover:text-white transition"
+        >
           ← Home
         </Link>
-        <h1 className="text-2xl font-bold">Sign-up</h1>
+
+        <h1 className="text-2xl font-bold tracking-wide">
+          Sign Up
+        </h1>
       </div>
 
-      <label className="label">
-        <span className="label-text text-lg">Username:</span>
+      {/* Username */}
+      <label className="block text-gray-300 mb-1">
+        Username
       </label>
       <input
         type="text"
         placeholder="Enter username"
-        className="input input-bordered w-full text-black text-lg py-2"
+        className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
         onChange={(e) => setName(e.target.value)}
       />
 
-      <label className="label">
-        <span className="label-text text-lg">Password:</span>
+      {/* Password */}
+      <label className="block text-gray-300 mt-4 mb-1">
+        Password
       </label>
       <input
         type="password"
         placeholder="Enter password"
-        className="input input-bordered text-black w-full text-lg py-2"
+        className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      <button type="submit" className="btn bg-green-700 mt-2 py-2 text-lg">
-        Submit
+      {/* Button */}
+      <button
+        type="submit"
+        className="w-full mt-6 py-2 rounded-lg bg-yellow-500 hover:bg-yellow-400 text-black font-bold transition duration-200"
+      >
+        Create Account
       </button>
     </form>
   </div>
 );
+
 
 }
 
