@@ -9,18 +9,11 @@ const Navbar = () => {
   };
 
   return (
-    // sticky
-    <div className="sticky top-0 z-50 w-full bg-gray-800 border-b px-4 py-3 flex items-center justify-between">
-
+    <div className="w-full bg-gray-800 border-b px-4 py-3 flex items-center justify-between">
       
       {/* Left */}
       <div className="text-3xl font-extrabold tracking-widest text-yellow-400">
-        <Link
-        to="/search"
-        className="text-yellow-400 text-2xl font-bold hover:text-yellow-300"
-        >
-        RENTAL BUDDY
-        </Link>
+        BIKEBRO
       </div>
 
       {/* Right */}
@@ -38,15 +31,6 @@ const Navbar = () => {
         >
           Sign up
         </Link>
-
-        <a
-          href="https://chatgpt.com/g/g-693afe7cf278819184785ecd1f9481bf-rental-buddy"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="m-3 btn btn-primary"
-          >
-            chatbot
-        </a>
 
         <button
           onClick={logout}

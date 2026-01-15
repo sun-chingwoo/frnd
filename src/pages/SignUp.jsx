@@ -25,60 +25,44 @@ const SignUp = () => {
     }
   
   return (
-  <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black">
-    
-   <form
+  <div className="min-h-screen flex justify-center items-center bg-gray-500">
+    <form
       onSubmit={handleSubmit}
-      className="w-full max-w-md bg-black/80 backdrop-blur-md p-8 rounded-2xl shadow-2xl text-white"
+      className="flex flex-col bg-gray-800 text-white p-8 m-7 rounded-2xl shadow-lg w-96 gap-6"
     >
-      
-      {/* Header */}
-      <div className="flex justify-between items-center mb-6">
-        <Link
-          to="/filter"
-          className="text-sm text-gray-300 hover:text-white transition"
-        >
+      <div className="flex justify-between items-center mb-4">
+        <Link to="/filter" className="btn btn-sm bg-gray-600">
           ← Home
         </Link>
-
-        <h1 className="text-2xl font-bold tracking-wide">
-          Sign Up
-        </h1>
+        <h1 className="text-2xl font-bold">Sign-up</h1>
       </div>
 
-      {/* Username */}
-      <label className="block text-gray-300 mb-1">
-        Username
+      <label className="label">
+        <span className="label-text text-lg">Username:</span>
       </label>
       <input
         type="text"
         placeholder="Enter username"
-        className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
+        className="input input-bordered w-full text-black text-lg py-2"
         onChange={(e) => setName(e.target.value)}
       />
 
-      {/* Password */}
-      <label className="block text-gray-300 mt-4 mb-1">
-        Password
+      <label className="label">
+        <span className="label-text text-lg">Password:</span>
       </label>
       <input
         type="password"
         placeholder="Enter password"
-        className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
+        className="input input-bordered text-black w-full text-lg py-2"
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      {/* Button */}
-      <button
-        type="submit"
-        className="w-full mt-6 py-2 rounded-lg bg-yellow-500 hover:bg-yellow-400 text-black font-bold transition duration-200"
-      >
-        Create Account
+      <button type="submit" className="btn bg-green-700 mt-2 py-2 text-lg">
+        Submit
       </button>
     </form>
   </div>
 );
-
 
 }
 

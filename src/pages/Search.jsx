@@ -29,18 +29,15 @@ const Search = () => {
           BikeBro
         </h1>
 
-        {/* Tagline */}
-        <p className="text-gray-400 mb-8">
-          Rent vehicles easily, anywhere, anytime
+        <p className="text-gray-400 mb-10 text-lg">
+          Rent bikes easily, anywhere, anytime
         </p>
-
-        {/* Search Form */}
-        <form onSubmit={handlesearch} className="flex flex-col gap-4">
-          
-         <input
+        
+        <form onSubmit={handlesearch} className="flex flex-col gap-5">
+          <input
             type="text"
-            placeholder="Search by vehicle name or location"
-            className="w-full px-4 py-3 rounded-xl bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            placeholder="Search by bike name or location"
+            className="w-full px-5 py-3 rounded-2xl bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
             onChange={(e) => setsearch(e.target.value)}
           />
 
